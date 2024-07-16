@@ -1,0 +1,99 @@
+.chatList{
+    flex: 1;
+  overflow: auto;
+
+  /* Custom Scrollbar Styles */
+  ::-webkit-scrollbar {
+    width: 4px; /* Adjust the width as needed */
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent; /* Match with your background color */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: transparent; /* Customize the scrollbar color */
+    border-radius: 20; /* Optional: to make the scrollbar rounded */
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: transparent; /* Optional: scrollbar color on hover */
+  }
+
+  /* For Firefox */
+  scrollbar-width: thin; /* Adjust the width as needed */
+  scrollbar-color: rgba(3, 16, 3, 0.868) rgba(14, 28, 14, 0.605); /* thumb color track color */
+
+
+    .search{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+
+        .searchBar{
+            flex: 1;
+            background-color: rgba(21, 49, 21, 0.493);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border-radius: 10px ;
+            padding: 10px;
+
+            input{
+                background-color: transparent ;
+                border: none;
+                outline: none;
+                color: white;
+                flex: 1;
+            }
+
+            img{
+              width: 20px;
+              height: 20px;  
+            }
+        }
+
+        .add{
+            width: 36px;
+            height: 36px;
+            background-color: rgba(21, 49, 21, 0.493);
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+    }
+
+    .item{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        cursor: pointer;
+        border-bottom: 1px solid #dddddd35;
+
+        img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .texts{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            span{
+                font-weight: 500;
+            }
+
+            p{
+              font-size: 14px;
+              font-weight: 300;
+            }
+
+        }
+    }
+}
